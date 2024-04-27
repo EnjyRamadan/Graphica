@@ -1,0 +1,358 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  --lightblue: #0969b8;
+  --black: hsl(0, 3%, 7%);
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+#video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+#mynetwork {
+  width: 100%;
+  height: 80%;
+  position: relative;
+}
+
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #068FFF;
+  background: var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.box {
+  height: 86vh;
+  width: 78%;
+  margin-top: 4%;
+  margin-left: 10%;
+  padding: 0 20px; /* Fix the typo: should be 0 20px instead of 0,20px */
+  background-color: rgba(255, 255, 255, 0.1);
+  z-index: 10;
+  position: relative;
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  box-shadow: -15px 17px 17px rgba(10, 10, 10, 0.5);
+}
+
+.img {
+  margin-right: 2px;
+}
+
+.logo {
+  font-size: 27px;
+  color: #fff;
+  text-shadow:
+      0 0 7px blue,
+      0 0 10px blue,
+      0 0 21px blue,
+      0 0 42px blue,
+      0 0 82px blue,
+      0 0 92px blue,
+      0 0 102px blue,
+      0 0 151px blue;
+  animation: pulsate 2s infinite; /* Apply the keyframes animation */
+}
+
+@keyframes pulsate {
+  100% {
+      text-shadow:
+          0 0 4px #fff,
+          0 0 11px blue,
+          0 0 19px blue,
+          0 0 40px blue,
+          0 0 80px blue,
+          0 0 90px blue,
+          0 0 100px blue,
+          0 0 150px blue;
+  }
+
+  0% {
+      text-shadow:
+          0 0 2px #fff,
+          0 0 4px #fff,
+          0 0 6px #fff,
+          0 0 10px blue,
+          0 0 45px blue,
+          0 0 55px blue,
+          0 0 70px blue,
+          0 0 80px blue;
+  }
+}
+
+nav {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  padding: 20px 8%;
+}
+
+nav ul {
+  flex: 1;
+  text-align: right;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.blue:hover {
+  color: var(--lightblue);
+}
+
+.nav li {
+  display: inline;
+}
+
+button, #strategy,#nodeSelect,#nodeSelect1 {
+  margin-right: 2px;
+  padding: 10px 20px;
+  align-items: center;
+  background-color: var(--lightblue);
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 10%;
+  cursor: pointer;
+}
+
+button:after, #strategy:after,  #nodeSelect:after {
+  background-color: #111;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform 0.2s ease-out;
+  z-index: -1;
+}
+#strategy:after {
+  background-color: #111;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform 0.2s ease-out; /* Ensure that the transition is defined */
+  z-index: -1;
+}
+
+
+button:hover:after, #strategy:hover:after, #nodeSelect:hover:after  {
+  transform: translate(0, 0);
+}
+
+button:active, #strategy:active,  #nodeSelect:active {
+  background-color: palevioletred;
+  outline: 0;
+}
+
+button:hover, #strategy:hover, #nodeSelect:hover {
+  outline: 0;
+}
+
+.light {
+   margin-left: 0px; 
+}
+
+.custom-alert {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  background-color: palevioletred;
+  color: white;
+  display: none;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 20;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 250px;
+  overflow: auto;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #888;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.close {
+  color: #aaa;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.close:hover, .close:focus {
+  color: black;
+  text-decoration: none;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+#newLabel, #newEdgeLabel {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+#updateBtn, #updateEdgeBtn {
+  width: 50%;
+  margin-top: 20px;
+}
+.light2
+{
+  margin-bottom: 0px;
+}
+.input{
+  background-color: var(--lightblue);
+  color:white;
+}
+ #customDropdown {
+  display: inline-block;
+  position: relative;
+  background-color: var(--lightblue);
+  
+}
+
+ #customDropdown input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+  cursor: pointer;
+}
+
+#customDropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  max-height: 150px;
+  overflow-y: auto;
+  border: 1px solid #0969b8;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: rgba(255, 255, 255, 0); 
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  color:palevioletred ;
+  bottom: 100%;
+}
+
+
+
+#customDropdown ul li {
+  padding: 8px;
+  display: flex;
+  cursor: pointer;
+}
+
+#customDropdown ul li:hover {
+  background-color: #f5f5f5;
+}
+
+#customDropdown input:focus + ul {
+  display: block;
+}
+
+#customDropdown ul li input {
+  margin-right: 8px;
+}
+
+#customDropdown ul li input[type="checkbox"] {
+  margin-right: 8px;
+  width: 15px; 
+  height: 15px; 
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  cursor: pointer;
+}
+#customDropdown ul::-webkit-scrollbar {
+  width: 10px; 
+}
+
+
+#customDropdown ul::-webkit-scrollbar-thumb {
+  background-color: #808080; 
+  border-radius: 10px; 
+}
+
+
+#customDropdown ul::-webkit-scrollbar-track {
+  background-color: #f1f1f1; 
+}

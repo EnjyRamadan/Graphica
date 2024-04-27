@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MazeGraphica</title>
+        <link rel="stylesheet" type="text/css"
+            href="{{url_for('static',filename='about.css')}}" />
+            <script
+            type="text/javascript"
+            src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"
+          ></script>
+          <script
+            type="module"
+            src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/newtonsCradle.js"
+          ></script>
+    </head>
+    <body>
+        <nav>
+            <l-newtons-cradle
+                class="img"
+                size="78"
+                speed="1.4"
+                color="#068FFF"></l-newtons-cradle>
+            <p class="logo pulsate">MazeGraphica</p>
+            <ul class="nav">
+                <li><a href="/" class="blue">Home</a></li>
+                <li><a href="about.html" class="blue">About</a></li>
+                <li><a href="vis.html" class="blue">Graphs</a></li>
+               
+            </ul>
+        </nav>
+        <div class="about-section">
+            <h1>About Us Page</h1>
+            <p>We are MazeGraphica, our main purpose is to use AI searching
+                techniques in a more fun and visualized way.</p>
+            
+        </div>
+
+        <h2 style="text-align:center">Our Team</h2>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="{{ url_for('static', filename='enjy.jpeg') }}" alt="Enjy" style="width:100%; height:50%" class="enjy">
+
+                    <div class="container">
+                        <h2>Enjy Ramadan</h2>
+                        <p class="title">CS student</p>
+                        <p>An ambitious CS student and a pro Tennis player.</p>
+                        <p>enjy.ramadan@msa.edu.eg</p>
+                        <p>
+                            <a href="https://www.linkedin.com/in/enjy-ramadan-0a3951158?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="button">
+                              Contact
+                            </a>
+                          </button>
+                          </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="{{url_for('static',filename='youssef.jpeg')}}" alt="Mike"
+                        style="width:100%">
+                    <div class="container">
+                        <h2>Youssef Makled</h2>
+                        <p class="title">CS Student</p>
+                        <p>An ambitious CS student.</p>
+                        <p>youssef.mohamed88@msa.edu.eg</p>
+                        <p><a href="https://www.linkedin.com/in/youssef-mohamed-635306270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="button">
+                            Contact
+                          </a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="{{url_for('static',filename='Mazen.jpeg')}}" alt="Mazen" style="width:100%; height:70%"  class="enjy">
+                    <div class="container">
+                        <h2>Mazen Ashraf</h2>
+                        <p class="title">CS Student</p>
+                        <p>An ambitious CS student.</p>
+                        <p>mazen.ashraf4@msa.edu.eg</p>
+                        <p><a href="https://www.linkedin.com/in/mazen-ebrahim-8b6a171a9/" class="button">
+                            Contact
+                          </a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

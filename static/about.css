@@ -1,0 +1,254 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #000;
+}
+:root{
+    --lightblue:#0969b8;
+    --black:hsl(0, 3%, 7%);
+
+}
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+#loader {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   color:#068FFF;
+   background:var(--black); 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 9999; 
+} 
+.box{
+   height: 86vh;
+   width: 75%;
+   margin-top:5%;
+   margin-left: 12%;
+   padding: 0,20px;
+   background-color: rgba(255, 255, 255, 0.1);
+   z-index: 10;
+   /* display: flex; */
+   position: relative;
+   border-radius: 20px;
+   border:2px solid rgba(255, 255, 255, 0.7);
+   backdrop-filter:blur(10px);
+   box-shadow:-15px 17px 17px rgba(10, 10, 10, 0.25) ;
+   
+   
+}
+.img{
+   margin-right: 2px;
+}
+.logo{
+   font-size:27px;
+   color: #fff;
+   text-shadow:
+     0 0 7px blue,
+     0 0 10px blue,
+     0 0 21px blue,
+     0 0 42px blue,
+     0 0 82px blue,
+     0 0 92px blue,
+     0 0 102px blue,
+     0 0 151px blue;
+}
+
+@keyframes pulsate {
+   
+   100% {
+ 
+       text-shadow:
+       0 0 4px #fff,
+       0 0 11px blue,
+       0 0 19px blue,
+       0 0 40px blue,
+       0 0 80px blue,
+       0 0 90px blue,
+       0 0 100px blue,
+       0 0 150px blue;
+   
+   }
+   
+   0% {
+ 
+     text-shadow:
+     0 0 2px #fff,
+     0 0 4px #fff,
+     0 0 6px #fff,
+     0 0 10px blue,
+     0 0 45px blue,
+     0 0 55px blue,
+     0 0 70px blue,
+     0 0 80px blue;
+ 
+ }
+}
+nav{
+   font-size: 18px;
+   display:flex ;
+   align-items: center;
+   padding: 20px 8%;
+}
+nav ul{
+   flex:1;
+   text-align: right;
+}
+nav ul li{
+   display: inline-block;
+   list-style: none;
+   margin: 0 20px;
+
+}
+nav ul li a{
+   text-decoration: none;
+   color: #fff;
+   font-weight: bold;
+}
+
+.blue:hover{
+   color: var(--lightblue);
+
+}
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+  }
+  
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #0969b8c5;
+    color: white;
+  }
+  
+  .container {
+    padding: 0 16px;
+    color: #fff;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  .enjy{
+    height: 50%;
+  }
+  .button, #strategy,#nodeSelect {
+    margin-right: 10px;
+    padding: 10px 20px;
+    align-items: center;
+    background-color: var(--lightblue);
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 100%;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 11%;
+    cursor: pointer;
+  }
+  
+  .button:after, #strategy:after,  #nodeSelect:after {
+    background-color: #111;
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 48px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(8px, 8px);
+    transition: transform 0.2s ease-out;
+    z-index: -1;
+  }
+  #strategy:after {
+    background-color: #111;
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 48px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(8px, 8px);
+    transition: transform 0.2s ease-out; /* Ensure that the transition is defined */
+    z-index: -1;
+  }
+  
+  
+  .button:hover:after, #strategy:hover:after, #nodeSelect:hover:after  {
+    transform: translate(0, 0);
+  }
+  
+  .button:active, #strategy:active,  #nodeSelect:active {
+    background-color: palevioletred;
+    outline: 0;
+  }
+  
+  .button:hover, #strategy:hover, #nodeSelect:hover {
+    outline: 0;
+  }
+  
+  .light {
+    margin-left: 20px;
+  }
+  .button {
+    width: 40%;
+  }
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  

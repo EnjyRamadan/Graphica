@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script
+      src="https://kit.fontawesome.com/587d92c94b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"
+    ></script>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/newtonsCradle.js"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='vis.css')}}" />
+    <title>MazeGraphica</title>
+  </head>
+
+  <body>
+    <video id="video-background" autoplay loop muted>
+      <source src="{{url_for('static',filename='vid3.mp4')}}" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <div class="container">
+      <div class="box">
+        <nav>
+          <l-newtons-cradle
+            class="img"
+            size="78"
+            speed="1.4"
+            color="#068FFF"
+          ></l-newtons-cradle>
+          <p class="logo pulsate">MazeGraphica</p>
+          <ul class="nav">
+            <li><a href="/" class="blue">Home</a></li>
+            <li><a href="about.html" class="blue">About</a></li>
+            <li><a href="/vis.html" class="blue">Graphs</a></li>
+            
+          </ul>
+        </nav>
+        <div id="mynetwork"></div>
+       
+        <div class="buttons">
+          <ul class="nav">
+            <li><button onclick="addNode()" class="light">Add Node</button></li>
+            <li><button onclick="editNode()">Edit Node</button></li>
+            <li><button onclick="deleteSelectedNode()">Delete</button></li>
+            <li><button onclick="editEdge()">Edit Edge</button></li>
+            <li><button onclick="removeSelectedEdge()">Re-Edge</button></li>
+            <li class="dropdown">
+              <select name="strategy" id="strategy">
+                <option value="0">Strategy:</option>
+                <option value="BFS">BFS</option>
+                <option value="DFS">DFS</option>
+                <option value="UCS">UCS</option>
+                <option value="Greedy">Greedy</option>
+                <option value="A*">A*</option>
+              </select>
+            </li>
+            <li>
+              <select id="nodeSelect" class="light"></select>
+            </li>
+           <li>
+            
+            <div id="customDropdown">
+              <input type="text" class="input" placeholder="Select Goals" readonly>
+              <ul>
+                
+              </ul>
+            </div>
+              </li>
+       
+          
+            <li><button onclick="solve()">Solve</button></li>
+           <!-- <li> <button onclick="getSelectedNodes()">Get Selected Nodes</button></li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="customAlert" class="custom-alert"></div>
+    <div id="myModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+        <label for="newLabel">Enter new label for the node:</label>
+        <input type="text" id="newLabel" />
+        <label for="newHeuristic">Enter heuristic value:</label>
+        <input type="number" id="newHeuristic" value="1" />
+        <button id="updateBtn" onclick="updateNodeLabelAndHeuristic()">
+          Update
+        </button>
+      </div>
+    </div>
+    <div id="edgeModal" class="modal">
+      <span class="close" onclick="closeEdgeModal()">&times;</span>
+      <div class="modal-content">
+        <label for="newEdgeLabel">Enter new label for the edge:</label>
+        <input type="text" id="newEdgeLabel" />
+        <button id="updateEdgeBtn" onclick="updateEdgeLabel()">Update</button>
+      </div>
+    </div>
+
+    <script src="{{url_for('static',filename='vis.js')}}">
+    </script>
+  </body>
+</html>
