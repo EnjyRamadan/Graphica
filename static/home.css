@@ -100,7 +100,7 @@
    }
  }
  nav{
-     font-size: 18px;
+     font-size: 23px;
      display:flex ;
      align-items: center;
      padding: 20px 8%;
@@ -138,12 +138,13 @@
  }
  .container .box .contains .section-1 p{
      margin-top: 5px;
+     font-size: 20px;
  }
  .container .box .contains .section-1 .button{
      margin-top: 50px;
  }
  .container .box .contains .section-1 .button a{
-     padding: 10px 20px;
+     padding: 100px 100px;
      border:1px solid #fff;
      cursor: pointer;
      
@@ -151,31 +152,29 @@
  }
  
  .container .box .contains .section-1 .button a{
-   align-items: center;
-   background-color: var(--lightblue);
-   border: 2px solid #111;
-   border-radius: 8px;
-   box-sizing: border-box;
-   color: #fff;
-   /* font-size: 20px; */
-   cursor: pointer;
-   display: flex;
-   font-family: Inter,sans-serif;
-   font-size: 16px;
-   height: 48px;
-   justify-content: center;
-   line-height: 24px;
-   max-width: 100%;
-   padding: 0 25px;
-   position: relative;
-   text-align: center;
-   text-decoration: none;
-   user-select: none;
-   -webkit-user-select: none;
-   touch-action: manipulation;
-   padding: 10px 20px;
-   width:17%;  
-     cursor: pointer;
+    align-items: center;
+    background-color: var(--lightblue);
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    height: 48px;
+    justify-content: center; 
+    line-height: 24px;
+    max-width: 100%;
+    padding: 0 25px; 
+    position: relative;
+    text-align: center; 
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 30%; 
+    
  }
  
  .container .box .contains .section-1 .button a:after {
@@ -205,7 +204,47 @@
  .container .box .contains .section-1 .button a:hover {
    outline: 0;
  }
- 
+ .contains {
+    display: flex;
+    justify-content: center;
+   
+  }
+  
+  .content-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .text-content {
+    width: 60%; 
+    margin-bottom: 10%;
+    font-size: large;
+  }
+  
+  .image-content {
+    width: 50%; 
+    margin-right: 35px;
+  }
+  
+  .image-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: to give the image rounded corners */
+  }
+  
+  @media (max-width: 768px) {
+    .content-wrapper {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .text-content, .image-content {
+      width: 100%;
+    }
+  }
+  
  @media (min-width: 768px) {
    .button-56 {
      padding: 0 40px;
@@ -213,4 +252,10 @@
  }
  span{
      color:var(--lightblue) ;
+ }
+ #pink{
+    color: palevioletred;
+ }
+ #pinkish{
+    color: palevioletred;
  }

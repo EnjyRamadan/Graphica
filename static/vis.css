@@ -107,7 +107,7 @@ html, body {
 }
 
 nav {
-  font-size: 18px;
+  font-size: 20px;
   display: flex;
   align-items: center;
   padding: 20px 8%;
@@ -355,4 +355,7 @@ label {
 
 #customDropdown ul::-webkit-scrollbar-track {
   background-color: #f1f1f1; 
+}
+#customDropdown input{
+ color: white;
 }

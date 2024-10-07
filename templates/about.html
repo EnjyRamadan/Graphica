@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MazeGraphica</title>
+        <title>Graphica</title>
         <link rel="stylesheet" type="text/css"
             href="{{url_for('static',filename='about.css')}}" />
             <script
@@ -22,7 +22,7 @@
                 size="78"
                 speed="1.4"
                 color="#068FFF"></l-newtons-cradle>
-            <p class="logo pulsate">MazeGraphica</p>
+            <p class="logo pulsate">Graphica</p>
             <ul class="nav">
                 <li><a href="/" class="blue">Home</a></li>
                 <li><a href="about.html" class="blue">About</a></li>
@@ -30,64 +30,42 @@
                
             </ul>
         </nav>
-        <div class="about-section">
-            <h1>About Us Page</h1>
-            <p>We are MazeGraphica, our main purpose is to use AI searching
-                techniques in a more fun and visualized way.</p>
-            
-        </div>
-
-        <h2 style="text-align:center">Our Team</h2>
-        <div class="row">
-            <div class="column">
-                <div class="card">
-                    <img src="{{ url_for('static', filename='enjy.jpeg') }}" alt="Enjy" style="width:100%; height:50%" class="enjy">
-
-                    <div class="container">
-                        <h2>Enjy Ramadan</h2>
-                        <p class="title">CS student</p>
-                        <p>An ambitious CS student and a pro Tennis player.</p>
-                        <p>enjy.ramadan@msa.edu.eg</p>
-                        <p>
-                            <a href="https://www.linkedin.com/in/enjy-ramadan-0a3951158?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="button">
-                              Contact
-                            </a>
-                          </button>
-                          </p>
-                    </div>
+        <div class="responsive-container-block bigContainer">
+            <div class="responsive-container-block Container bottomContainer">
+              <div class="ultimateImg">
+                <img class="mainImg" src="static/enjy.jpeg">
+                <div class="purpleBox">
+                  <p class="purpleText">
+                    Hello, my name is Enjy Ramadan, and I’m a software engineer and the developer of this website. My goal is to make AI graph search techniques more accessible through interactive tools and resources. Whether you're a beginner or an expert, this platform is designed to help you explore and understand advanced AI search methods with ease.
+                  </p>
                 </div>
-            </div>
+              </div>
+              <div class="allText bottomText">
+                <p class="text-blk headingText">
+                  About Us
+                </p>
+                <p class="text-blk subHeadingText">
+                    Welcome to Graphica!
+                </p>
+                <p class="text-blk description">
+                    At Graphica, we are passionate about pushing the boundaries of Artificial Intelligence by developing cutting-edge graph search techniques. Our goal is to make AI-powered graph searching more intuitive, efficient, and accessible for everyone—from researchers to developers and beyond.
+                </p>
+                <p class="text-blk subHeadingText">
+                    Our Mission
+                </p>
+                <p class="text-blk description">
+                    We aim to demystify the world of AI search techniques, especially in the realm of graph theory. By providing accessible tools, resources, and cutting-edge research, we empower developers, researchers, and businesses to leverage AI for more effective decision-making and problem-solving.
+                </p>
+                <p class="text-blk subHeadingText">
+                    Why Graphica?
+                </p>
+                <p class="text-blk description">
+                    Whether you're working on AI-based search problems, studying complex data networks, or simply curious about the power of AI in graph searching, MazeGraphica is your go-to resource. We combine innovation with education, making AI search not just powerful but fun and interactive.
 
-            <div class="column">
-                <div class="card">
-                    <img src="{{url_for('static',filename='youssef.jpeg')}}" alt="Mike"
-                        style="width:100%">
-                    <div class="container">
-                        <h2>Youssef Makled</h2>
-                        <p class="title">CS Student</p>
-                        <p>An ambitious CS student.</p>
-                        <p>youssef.mohamed88@msa.edu.eg</p>
-                        <p><a href="https://www.linkedin.com/in/youssef-mohamed-635306270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="button">
-                            Contact
-                          </a></p>
-                    </div>
-                </div>
+                    Join us on this journey as we revolutionize the way AI understands and navigates graphs.
+                </p>
+              </div>
             </div>
-
-            <div class="column">
-                <div class="card">
-                    <img src="{{url_for('static',filename='Mazen.jpeg')}}" alt="Mazen" style="width:100%; height:70%"  class="enjy">
-                    <div class="container">
-                        <h2>Mazen Ashraf</h2>
-                        <p class="title">CS Student</p>
-                        <p>An ambitious CS student.</p>
-                        <p>mazen.ashraf4@msa.edu.eg</p>
-                        <p><a href="https://www.linkedin.com/in/mazen-ebrahim-8b6a171a9/" class="button">
-                            Contact
-                          </a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
+          </div>
     </body>
 </html>
