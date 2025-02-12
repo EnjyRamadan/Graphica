@@ -8,7 +8,7 @@ body {
     --black:hsl(0, 3%, 7%);
 
 }
-  html {
+  html { 
     box-sizing: border-box;
   }
   
