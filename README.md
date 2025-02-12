@@ -56,7 +56,7 @@ in terminal run the following : python main.py
 3. **Edit Nodes and Edges:** Use the "Edit Node" and "Edit Edge" options to modify node properties and edge weights as needed.
 4. **Select Algorithm:** Choose the desired algorithm from the strategy menu (BFS, DFS, UCS, Greedy, A\*).
 5. **Select Goals:** Define the start and goal nodes for the pathfinding process.
-6. **Solve:** Click "Solve" to run the tool and visualize the search process along with the optimal path.
+6. **Solve:** Click "Solve" to run the tool and visualize the search process in **Grey** along with the optimal path in **Purple**.
 
 
 ## Example
