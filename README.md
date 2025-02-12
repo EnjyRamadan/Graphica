@@ -59,12 +59,10 @@ in terminal run the following : python main.py
 6. **Solve:** Click "Solve" to run the tool and visualize the search process in **Grey** along with the optimal path in **Purple**.
 
 
-## Example
+## Demo Video
 
-```python
-# Example code snippet to demonstrate usage
-# Add your specific usage instructions here
-```
+[![Graphica Demo](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)]([https://www.youtube.com/watch?v=YOUR_VIDEO_ID](https://drive.google.com/file/d/1RyEgW7C7JastskaQolwQ8UdCVStfiIaV/view?usp=drive_link))
+
 
 
 
