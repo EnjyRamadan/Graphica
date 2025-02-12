@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Graphica</title>
+        <link rel="icon" href="/static/graph.png" type="image/png" />
+        <link rel="stylesheet" type="text/css"
+            href="{{url_for('static',filename='about.css')}}" />
+            <script
+            type="text/javascript"
+            src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"
+          ></script>
+          <script
+            type="module"
+            src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/newtonsCradle.js"
+          ></script>
+    </head>
+    <body>
+        <nav>
+            <l-newtons-cradle
+                class="img"
+                size="78"
+                speed="1.4"
+                color="#068FFF"></l-newtons-cradle>
+            <p class="logo pulsate">Graphica</p>
+            <ul class="nav">
+                <li><a href="/" class="blue">Home</a></li>
+                <li><a href="about.html" class="blue">About</a></li>
+                <li><a href="vis.html" class="blue">Graphs</a></li>
+               
+            </ul>
+        </nav>
+        <div class="responsive-container-block bigContainer">
+            <div class="responsive-container-block Container bottomContainer">
+              <div class="ultimateImg">
+                <img class="mainImg" src="static/enjy.jpeg">
+                <div class="purpleBox">
+                  <p class="purpleText">
+                    Hello, my name is Enjy Ramadan, and I’m a software engineer and the developer of this website. My goal is to make AI graph search techniques more accessible through interactive tools and resources. Whether you're a beginner or an expert, this platform is designed to help you explore and understand advanced AI search methods with ease.
+                  </p>
+                </div>
+              </div>
+              <div class="allText bottomText">
+                <p class="text-blk headingText">
+                  About Us
+                </p>
+                <p class="text-blk subHeadingText">
+                    Welcome to Graphica!
+                </p>
+                <p class="text-blk description">
+                    At Graphica, we are passionate about pushing the boundaries of Artificial Intelligence by developing cutting-edge graph search techniques. Our goal is to make AI-powered graph searching more intuitive, efficient, and accessible for everyone—from researchers to developers and beyond.
+                </p>
+                <p class="text-blk subHeadingText">
+                    Our Mission
+                </p>
+                <p class="text-blk description">
+                    We aim to demystify the world of AI search techniques, especially in the realm of graph theory. By providing accessible tools, resources, and cutting-edge research, we empower developers, researchers, and businesses to leverage AI for more effective decision-making and problem-solving.
+                </p>
+                <p class="text-blk subHeadingText">
+                    Why Graphica?
+                </p>
+                <p class="text-blk description">
+                    Whether you're working on AI-based search problems, studying complex data networks, or simply curious about the power of AI in graph searching, MazeGraphica is your go-to resource. We combine innovation with education, making AI search not just powerful but fun and interactive.
+
+                    Join us on this journey as we revolutionize the way AI understands and navigates graphs.
+                </p>
+              </div>
+            </div>
+          </div>
+    </body>
+</html>
