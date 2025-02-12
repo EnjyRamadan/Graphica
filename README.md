@@ -37,7 +37,7 @@ This tool provides solutions for AI graph search problems using popular algorith
 
 ### ⚙️ **Key Features**
 
-- Dynamic node and edge management.
+- Dynamic node and edge management powered by **Vis.js**.
 - Real-time visualization of graph traversal.
 - Support for weighted and unweighted graphs.
 - Flexible algorithm switching with instant results.
@@ -51,9 +51,13 @@ in terminal run the following : python main.py
 
 ## Usage
 
-1. Select the desired algorithm from the menu (BFS, DFS, UCS, Greedy, A\*).
-2. Input your graph data.
-3. Run the tool to visualize the search process and find the optimal path.
+1. **Add Nodes:** Click on "Add Node" to insert nodes into the graph.
+2. **Create Edges:** Double-click on one node and then double-click on another node to create an edge between them.
+3. **Edit Nodes and Edges:** Use the "Edit Node" and "Edit Edge" options to modify node properties and edge weights as needed.
+4. **Select Algorithm:** Choose the desired algorithm from the strategy menu (BFS, DFS, UCS, Greedy, A\*).
+5. **Select Goals:** Define the start and goal nodes for the pathfinding process.
+6. **Solve:** Click "Solve" to run the tool and visualize the search process along with the optimal path.
+
 
 ## Example
 
@@ -67,4 +71,6 @@ in terminal run the following : python main.py
 ## Contact
 
 For any questions or suggestions, feel free to contact [engyramadan.1566@gmail.com].
+
+
 
