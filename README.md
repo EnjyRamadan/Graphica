@@ -46,7 +46,7 @@ This tool provides solutions for AI graph search problems using popular algorith
 
 ```bash
 git clone (https://github.com/EnjyRamadan/Graphica.git)
-python main.py
+in terminal run the following : python main.py
 ```
 
 ## Usage
