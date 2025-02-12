@@ -61,7 +61,7 @@ in terminal run the following : python main.py
 
 ## Demo Video
 
-[![Graphica Demo](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)]([https://www.youtube.com/watch?v=YOUR_VIDEO_ID](https://drive.google.com/file/d/1RyEgW7C7JastskaQolwQ8UdCVStfiIaV/view?usp=drive_link))
+[![Graphica Demo]([https://www.youtube.com/watch?v=YOUR_VIDEO_ID](https://drive.google.com/file/d/1RyEgW7C7JastskaQolwQ8UdCVStfiIaV/view?usp=drive_link))
 
 
 
