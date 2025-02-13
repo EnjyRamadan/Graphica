@@ -45,10 +45,13 @@ This tool provides solutions for AI graph search problems using popular algorith
 ## Installation
 
 ```bash
-git clone (https://github.com/EnjyRamadan/Graphica.git)
-in terminal run the following : python main.py
+git clone https://github.com/EnjyRamadan/Graphica.git
 ```
+## **How to Run**
 
+```bash
+python main.py
+```
 ## Usage
 
 1. **Add Nodes:** Click on "Add Node" to insert nodes into the graph.
