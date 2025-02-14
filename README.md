@@ -46,11 +46,11 @@ This tool provides solutions for AI graph search problems using popular algorith
 
 Graphica is developed using a full-stack approach:
 
-- Frontend: 🖥 HTML, CSS, JavaScript, Vue.js for a smooth user interface.
+- Frontend: HTML, CSS, JavaScript, Vue.js for a smooth user interface.
 
-- Backend: 🖧 Python, Flask for handling graph search algorithms and requests.
+- Backend: Python, Flask for handling graph search algorithms and requests.
 
-- Visualization: 📊 Vis.js for interactive graph rendering.
+- Visualization: Vis.js for interactive graph rendering.
 
 ## Installation
 
